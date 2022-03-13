@@ -1,0 +1,143 @@
+/* colores
+
+Primario: #2C3333
+Secundario: #395B64
+Terciario: #2666CF
+Cuaternario: #F5F2E7 */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 1rem;
+}
+body {
+	background-color: #395B64;
+}
+nav{
+	width: 100%;
+	background-color: #2C3333;
+	padding: 5px;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #F5F2E7;
+	padding: 15px;
+}
+nav a:hover{
+	background-color: #395B64;
+	border-radius: 10px;
+}
+.body{
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+.topics{
+
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #2C3333;
+	border-radius: 10px;
+	flex-basis: auto;
+	margin: 15px;
+	padding: 10px;
+	max-width: 300px;
+}
+
+.topics ul hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.topics li{
+	display: flex;
+
+}
+
+.topics a{
+	color: #F5F2E7;
+	padding: 10px;
+	width: 100%;
+	text-decoration: none;
+}
+.topics a:hover {
+	background-color: #395B64;
+	border-radius: 10px;
+
+}
+
+
+.topics ul{
+	list-style: none;
+}
+.data{
+	color: #F5F2E7;
+	border: 2px solid #F5F2E7;
+	border-radius: 10px;
+	background-color: #395B64;
+	margin: 15px;
+	padding: 30px;
+	flex: 2;
+	min-width: 130px;
+	line-height: 150%;
+}
+.data h1{
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.data h2{
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.data p{
+	padding-top:20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.data .code{
+	display: block;
+	font-family: monospace;
+	margin: 40px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 3px solid #2666CF;
+	max-width: 60%;
+}
+.data .code img{
+	width: 100%;
+}
+
+footer{
+	margin-bottom: 0px;
+	background-color: #2C3333;
+	width: 100%;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #F5F2E7;
+	font-weight: bold;
+}
+footer div{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 25px;
+}
