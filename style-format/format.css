@@ -10,8 +10,8 @@ Cuaternario: #F5F2E7 */
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Arial;
-	font-size: 1rem;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.1rem;
 }
 body {
 	background-color: #395B64;
@@ -66,6 +66,8 @@ nav{
 	
 }
 nav a{
+	cursor: pointer;
+	transition: .4s;
 	text-align: center;
 	display: block;
 	text-decoration: none;
@@ -79,10 +81,13 @@ nav a:hover{
 	background-color: #395B64;
 	/*border-radius: 10px;*/
 }
+#btn-main-nav{
+	display: none;
+}
 .container{
 	display: flex;
-
 }
+
 .topics{
 
 	text-transform: uppercase;
@@ -93,6 +98,7 @@ nav a:hover{
 	padding: 10px;
 	flex: 1;
 	width: 300px;
+	
 }
 #btn-toggle {
 	margin: 0;
@@ -130,10 +136,12 @@ nav a:hover{
 }
 
 .topics a{
+	transition: .4s;
 	color: #F5F2E7;
 	padding: 10px;
 	width: 100%;
 	text-decoration: none;
+	cursor: pointer;
 }
 .topics a:hover {
 	background-color: #395B64;
@@ -175,9 +183,13 @@ nav a:hover{
 	display : block;
 	padding-top:20px;
 	padding-bottom: 20px;
-	font-size: 20px;
-	text-align: justify;
-	line-height: 30px;
+	font-size: 30px;
+	text-align: left;
+	line-height: 37px;
+}
+.data ol li{
+	font-size: 30px;
+	margin: 10px 45px 10px 45px;
 }
 
 .data .code{
@@ -197,6 +209,36 @@ nav a:hover{
 	border-radius: 10px;
 	height: auto;
 }
+.data .ref{
+	border: none;
+	border-left: 10px solid #2666CF;
+	background-color: rgba(255, 255, 255, 0.4);
+	color:rgb(10, 20, 53);
+	margin: 15px;
+	padding: 0 40px 0 40px;
+	font-style: oblique;
+	font-weight: normal;
+}
+.ref span{
+	font-size: 20px;
+	font-style: normal;
+}
+.ejercicios{
+	cursor: pointer;
+	font-weight: bold;
+	width: 100%;
+	padding: 20px;
+	color: #F5F2E7;
+	border-color: #2666CF;
+	background-color: #395B64;
+	border-width: 5pt;
+	transition: .4s;
+}
+.ejercicios:hover{
+	color: #F5F2E7;
+	border-color: #2666CF;
+	background-color: #2C3333;
+}
 
 footer{
 	margin-bottom: 0px;
@@ -208,6 +250,7 @@ footer{
 	font-weight: bold;
 }
 footer div{
+	color: #F5F2E7;
 	display: flex;
 	box-sizing: border-box;
 	margin-right: auto;
@@ -215,10 +258,25 @@ footer div{
 	padding: 25px;
 	flex: 1;
 }
+footer a{
+	color: #F5F2E7;
+}
+footer a:hover{
+	cursor: pointer;
+	color: #a638e0;
+}
 
 @media all and (max-width:700px){
 	.container {
 		flex-direction: column;
+	}
+	
+	#main-nav{
+		display: none;
+	}
+
+	#btn-main-nav{
+		display: block;
 	}
 	nav {
 		flex-direction: column;
@@ -241,5 +299,7 @@ footer div{
 	}
 	footer div{
 		width: 100%;
+		justify-content: center;
+		
 	}
 }
