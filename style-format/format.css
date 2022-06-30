@@ -191,7 +191,9 @@ nav a:hover{
 	font-size: 30px;
 	margin: 10px 45px 10px 45px;
 }
-
+.name {
+	font-size: 30px;
+}
 .data .code{
 	display: block;
 	font-family: monospace;
