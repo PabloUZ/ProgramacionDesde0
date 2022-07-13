@@ -1,11 +1,9 @@
-/* colores
-
-Primario: #2C3333
-Secundario: #395B64
-Terciario: #2666CF
-Cuaternario: #F5F2E7 */
-
-
+:root{
+	--primario: #2C3333;
+	--secundario: #395B64;
+	--terciario: #2666CF;
+	--cuaternario: #F5F2E7;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -14,7 +12,7 @@ Cuaternario: #F5F2E7 */
 	font-size: 1.1rem;
 }
 body {
-	background-color: #395B64;
+	background-color: var(--secundario);
 	min-width: 600px;
 	
 }
@@ -22,12 +20,12 @@ body::-webkit-scrollbar{
 	width: 13px;
 }
 body::-webkit-scrollbar-track{
-	background: #2C3333;
+	background: var(--primario);
 }
 body::-webkit-scrollbar-thumb{
-	background: #F5F2E7;
+	background: var(--cuaternario);
 	border-radius: 30px;
-	border: 3px solid #2C3333;
+	border: 3px solid var(--primario);
 }
 .body{
 	width: device-width !important;
@@ -40,7 +38,7 @@ body::-webkit-scrollbar-thumb{
 }
 .nav{
 	/*border-radius: 10px;*/
-	background-color: #2C3333;
+	background-color: var(--primario);
 	font-weight: bolder;
 	margin: 15px;
 	padding: 10px;
@@ -55,10 +53,10 @@ body::-webkit-scrollbar-thumb{
 	width: 100%;
 	font-weight: bold;
 	font-size: 1rem;
-	background-color: #2C3333;
+	background-color: var(--primario);
 	border: none;
 	border-radius: 10px;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 }
 nav{
 	display: flex;
@@ -71,14 +69,14 @@ nav a{
 	text-align: center;
 	display: block;
 	text-decoration: none;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 	padding: 10px;
 	flex: 1 1 auto;
 	/* min-width: 275px; */
 	align-self: auto;
 }
 nav a:hover{
-	background-color: #395B64;
+	background-color: var(--secundario);
 	/*border-radius: 10px;*/
 }
 #btn-main-nav{
@@ -92,7 +90,7 @@ nav a:hover{
 
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color: #2C3333;
+	background-color: var(--primario);
 	/*border-radius: 10px;*/
 	margin: 15px;
 	padding: 10px;
@@ -107,13 +105,13 @@ nav a:hover{
 	width: 100%;
 	font-weight: bold;
 	font-size: 2rem;
-	background-color: #2C3333;
+	background-color: var(--primario);
 	border: none;
 	border-radius: 10px;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 }
 #btn-toggle:hover{
-	background-color: #395B64;
+	background-color: var(--secundario);
 }
 
 .topics ul hr{
@@ -127,24 +125,24 @@ nav a:hover{
 .topics li{
 	align-items: center;
 	display: flex;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 }
 .topics li span{
 	padding: 5px;
-	background-color: #395B64;
+	background-color: var(--secundario);
 	border-radius: 20px;
 }
 
 .topics a{
 	transition: .4s;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 	padding: 10px;
 	width: 100%;
 	text-decoration: none;
 	cursor: pointer;
 }
 .topics a:hover {
-	background-color: #395B64;
+	background-color: var(--secundario);
 	/*border-radius: 10px;*/
 
 }
@@ -154,10 +152,10 @@ nav a:hover{
 	list-style: none;
 }
 .data{
-	color: #F5F2E7;
-	border: 2px solid #F5F2E7;
+	color: var(--cuaternario);
+	border: 2px solid var(--cuaternario);
 	/*border-radius: 10px;*/
-	background-color: #395B64;
+	background-color: var(--secundario);
 	margin: 15px;
 	padding: 30px;
 	display: flex;
@@ -199,8 +197,8 @@ nav a:hover{
 	font-family: monospace;
 	padding: 5px;
 	border-radius: 10px;
-	border: 3px solid #2666CF;
-	background-color: #2666CF;
+	border: 3px solid var(--terciario);
+	background-color: var(--terciario);
 	width: 100%;
 	height: auto;
 }
@@ -213,7 +211,7 @@ nav a:hover{
 }
 .data .ref{
 	border: none;
-	border-left: 10px solid #2666CF;
+	border-left: 10px solid var(--terciario);
 	background-color: rgba(255, 255, 255, 0.4);
 	color:rgb(10, 20, 53);
 	margin: 15px;
@@ -230,29 +228,29 @@ nav a:hover{
 	font-weight: bold;
 	width: 100%;
 	padding: 20px;
-	color: #F5F2E7;
-	border-color: #2666CF;
-	background-color: #395B64;
+	color: var(--cuaternario);
+	border-color: var(--terciario);
+	background-color: var(--secundario);
 	border-width: 5pt;
 	transition: .4s;
 }
 .ejercicios:hover{
-	color: #F5F2E7;
-	border-color: #2666CF;
-	background-color: #2C3333;
+	color: var(--cuaternario);
+	border-color: var(--terciario);
+	background-color: var(--primario);
 }
 
 footer{
 	margin-bottom: 0px;
-	background-color: #2C3333;
+	background-color: var(--primario);
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	color: #F5F2E7;
+	color: var(--cuaternario);
 	font-weight: bold;
 }
 footer div{
-	color: #F5F2E7;
+	color: var(--cuaternario);
 	display: flex;
 	box-sizing: border-box;
 	margin-right: auto;
@@ -261,7 +259,7 @@ footer div{
 	flex: 1;
 }
 footer a{
-	color: #F5F2E7;
+	color: var(--cuaternario);
 }
 footer a:hover{
 	cursor: pointer;
