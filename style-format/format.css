@@ -13,7 +13,7 @@
 }
 body {
 	background-color: var(--secundario);
-	min-width: 600px;
+	width: 100vw;
 	
 }
 body::-webkit-scrollbar{
@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb{
 	border: 3px solid var(--primario);
 }
 .body{
-	width: device-width !important;
+	width: 100vw !important;
 	justify-content: center;
 	padding: 15px;
 	padding-left: 40px;
@@ -40,9 +40,9 @@ body::-webkit-scrollbar-thumb{
 	/*border-radius: 10px;*/
 	background-color: var(--primario);
 	font-weight: bolder;
-	margin: 15px;
+	margin: 25px 0 25px 0;
 	padding: 10px;
-	min-width: 300px;
+	width: 100%;
 	justify-content: center;
 }
 .nav button{
@@ -84,6 +84,12 @@ nav a:hover{
 }
 .container{
 	display: flex;
+
+}
+
+.left{
+	width: 33%;
+	padding-right: 10px;
 }
 
 .topics{
@@ -92,10 +98,9 @@ nav a:hover{
 	font-weight: bold;
 	background-color: var(--primario);
 	/*border-radius: 10px;*/
-	margin: 15px;
 	padding: 10px;
 	flex: 1;
-	width: 300px;
+	width: 100%;
 	
 }
 #btn-toggle {
@@ -156,12 +161,11 @@ nav a:hover{
 	border: 2px solid var(--cuaternario);
 	/*border-radius: 10px;*/
 	background-color: var(--secundario);
-	margin: 15px;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	flex: 3;
-	min-width: 300px;
+	width: 100%;
 	line-height: 150%;
 }
 .data h1{
@@ -192,7 +196,7 @@ nav a:hover{
 .name {
 	font-size: 30px;
 }
-.data .code{
+.code{
 	display: block;
 	font-family: monospace;
 	padding: 5px;
@@ -244,7 +248,8 @@ footer{
 	margin-bottom: 0px;
 	background-color: var(--primario);
 	width: 100%;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
 	justify-content: center;
 	color: var(--cuaternario);
 	font-weight: bold;
@@ -252,11 +257,8 @@ footer{
 footer div{
 	color: var(--cuaternario);
 	display: flex;
-	box-sizing: border-box;
-	margin-right: auto;
-	margin-left: auto;
 	padding: 25px;
-	flex: 1;
+	flex: 1 1 auto;
 }
 footer a{
 	color: var(--cuaternario);
@@ -266,7 +268,7 @@ footer a:hover{
 	color: #a638e0;
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:800px){
 	.container {
 		flex-direction: column;
 	}
@@ -283,19 +285,65 @@ footer a:hover{
 	}
 	.left{
 		display: block;
-		min-width: 300px;
+		width: 100%;
+		padding: 10px 0 10px 0;
 	}
 	.topics{
-		margin: 15px;
-		width: auto;
-		min-width: 300px;
+		margin: 0;
+		width: 100%;
 	}
 	.body{
 		padding: 15px 5px 15px 5px;
-		min-width: 300px;
+		width: 100vw;
 	}
 	footer{
-		flex-flow: column nowrap;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	footer div{
+		width: 100%;
+		justify-content: center;
+		
+	}
+}
+
+@media all and (max-width:500px){
+	.container {
+		flex-direction: column;
+	}
+	.buttons {
+		display: flex;
+	}
+	#main-nav{
+		display: none;
+	}
+
+	#btn-main-nav{
+		display: block;
+		width: fit-content;
+		margin-left: auto;
+	}
+	#btn-toggle {
+		display: block;
+		width: fit-content;
+	}
+	nav {
+		flex-direction: column;
+	}
+	.left{
+		display: none;
+		width: 100%;
+		padding: 10px 0 10px 0;
+	}
+	.topics{
+		margin: 0;
+		width: 100%;
+	}
+	.body{
+		padding: 15px 5px 15px 5px;
+		width: 100vw;
+	}
+	footer{
+		grid-template-columns: 1fr;
 	}
 	footer div{
 		width: 100%;

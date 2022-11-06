@@ -1,7 +1,7 @@
 $(window).ready(function() {
     var btn=document.getElementById('btn-toggle');
     var list=document.getElementById('toggle');
-    if($(window).outerWidth()<700){
+    if($(window).outerWidth()<500){
         btn.style.display="block";
         list.style.display="none";
     }else{
@@ -12,7 +12,7 @@ $(window).ready(function() {
 $(window).ready(function() {
     var btn=document.getElementById('btn-main-nav');
     var list=document.getElementById('main-nav');
-    if($(window).outerWidth()<700){
+    if($(window).outerWidth()<500){
         btn.style.display="block";
         list.style.display="none";
     }else{
@@ -23,7 +23,7 @@ $(window).ready(function() {
 $(window).resize(function() {
     var btn=document.getElementById('btn-toggle');
     var list=document.getElementById('toggle');
-    if($(window).outerWidth()<700){
+    if($(window).outerWidth()<500){
         btn.style.display="block";
         list.style.display="none";
     }else{
@@ -34,7 +34,7 @@ $(window).resize(function() {
 $(window).resize(function() {
     var btn=document.getElementById('btn-main-nav');
     var list=document.getElementById('main-nav');
-    if($(window).outerWidth()<700){
+    if($(window).outerWidth()<500){
         btn.style.display="block";
         list.style.display="none";
     }else{

@@ -19,7 +19,10 @@
 	
 	<div class="body">
 		<div class="nav">
-			<button id="btn-main-nav" onclick="mainNavToggle()">V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PERFIL</button>
+			<div class="buttons">
+				<button id="btn-toggle" onclick="toggle()">&equiv;</button>
+				<button id="btn-main-nav" onclick="mainNavToggle()">V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PERFIL</button>
+			</div>
 			<nav id="main-nav">
 				<a href="../../inicio/intro/index.html">INICIO</a>
 				<a href="../../quienes-somos/quienes_somos.html">QUIENES SOMOS</a>
@@ -27,10 +30,9 @@
 			</nav>
 		</div>
 		<div class="container">
-			<div class="left">
+			<div class="left" id="toggle">
 				<div class="topics">
-					<button id="btn-toggle" onclick="toggle()">&equiv;</button>
-					<ul id="toggle">
+					<ul>
 						<li><a href="../intro/index.html">Introducción</a></li>
 						<li><a href="../programacion/prog.html">¿Que es la programación?</a></li>
 						<li>&nbsp;<span>>></span>&nbsp;&nbsp;<a href="#">Lenguajes interpretados vs compilados</a></li>
